@@ -12,7 +12,7 @@ const LandingComponents_part2 = () => {
             <h1 className="text-3xl mb-5 font-medium">
               Chat with Random Strangers With Similar Interests
             </h1>
-            <p className="text-lg font-normal">
+            <p className="text-lg font-light tracking-wider">
               Talk to online strangers who love what you love, Chat about
               hobbies and enjoy fun conversations - all from one place! Making
               new friends based on interests is made easy .
@@ -25,12 +25,12 @@ const LandingComponents_part2 = () => {
         <div className="flex justify-around items-center w-full">
           <div className="w-1/2 flex flex-col text-white p-10 ml-10">
             <h1 className="text-3xl mb-5 font-medium">
-              Chat with Random Strangers With Similar Interests
+              Spam and Bot free chatrooms
             </h1>
-            <p className="text-lg font-normal">
-              Talk to online strangers who love what you love, Chat about
-              hobbies and enjoy fun conversations - all from one place! Making
-              new friends based on interests is made easy .
+            <p className="text-lg font-light tracking-wider">
+              Unlike some other websites , we actually care about your chat
+              experience and take the necessary steps to keep the bots at bay.
+              So come on in, the conversation's lovely and bot-free!
             </p>
           </div>
           <div className="w-1/2 flex justify-start pl-10 ">
@@ -46,12 +46,12 @@ const LandingComponents_part2 = () => {
           </div>
           <div className="w-1/2 flex flex-col text-white p-10 mr-10">
             <h1 className="text-3xl mb-5 font-medium">
-              Chat with Random Strangers With Similar Interests
+              From Strangers to Friends
             </h1>
-            <p className="text-lg font-normal">
-              Talk to online strangers who love what you love, Chat about
-              hobbies and enjoy fun conversations - all from one place! Making
-              new friends based on interests is made easy .
+            <p className="text-lg font-light tracking-wider">
+              Turn random online chats with strangers into lasting friendships,
+              our features makes it easy to add someone you've hit it off with
+              and catch up on past conversations.
             </p>
           </div>
         </div>
