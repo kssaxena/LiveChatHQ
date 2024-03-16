@@ -1,3 +1,4 @@
+import { Contact, HomeIcon, ListCollapse, SearchIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const HeaderAfterLogin = () => {
@@ -7,21 +8,22 @@ const HeaderAfterLogin = () => {
         <nav className="flex justify-around">
           <Link
             to="/home"
-            className=" font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
+            className="flex justify-center items-center font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
           >
+            <HomeIcon className="m-1" />
             Home
           </Link>
           <Link
             to="/about"
-            className=" font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
+            className="flex justify-center items-center font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
           >
-            About
+            <ListCollapse className="m-1"/>About
           </Link>
           <Link
             to="/contact"
-            className=" font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
+            className="flex justify-center items-center font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
           >
-            Contact
+            <Contact className="m-1"/>Contact
           </Link>
         </nav>
       </div>
@@ -34,7 +36,8 @@ const HeaderAfterLogin = () => {
       </div>
       <div className="flex w-1/3 justify-end items-center text-white">
         <div className="w-1/3 flex justify-center items-center">
-          <button className="w-full border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold ">
+          <button className="w-full border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold flex justify-center items-center">
+            <SearchIcon className="mr-14" />
             Search
           </button>
         </div>

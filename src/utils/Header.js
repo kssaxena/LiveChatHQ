@@ -1,3 +1,4 @@
+import { SearchIcon, Contact, HomeIcon, ListCollapse } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -7,21 +8,21 @@ const Header = () => {
         <nav className="flex justify-around">
           <Link
             to="/home"
-            className=" font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
+            className="flex justify-center items-center font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
           >
-            Home
+            <HomeIcon className="m-1"/>Home
           </Link>
           <Link
             to="/about"
-            className=" font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
+            className="flex justify-center items-center font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
           >
-            About
+            <ListCollapse className="m-1"/>About
           </Link>
           <Link
             to="/contact"
-            className=" font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
+            className="flex justify-center items-center font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
           >
-            Contact
+            <Contact className="m-1"/>Contact
           </Link>
         </nav>
       </div>
@@ -33,8 +34,8 @@ const Header = () => {
         </Link>
       </div>
       <div className="flex w-1/3 justify-end items-center text-white">
-        <div className="w-1/3 flex justify-between items-center">
-          <button className="border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold ">Search</button>
+        <div className="w-full flex justify-evenly items-center">
+          <button className="w-3/4 border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold flex items-center "><SearchIcon/><h1 className="text-right w-full">Search</h1></button>
           <button className="border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold ">Login</button>
         </div>
       </div>

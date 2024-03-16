@@ -1,3 +1,4 @@
+import { MessageSquareText } from "lucide-react";
 import { Images } from "./Images";
 
 const HomeUtility = () => {
@@ -8,7 +9,7 @@ const HomeUtility = () => {
       </div>
       <div className="w-1/3 text-white flex flex-col items-center justify-center pt-40 pb-48">
         <h1 className="tracking-wider text-center text-5xl drop-shadow-2xl">
-          Talk to Strangers<br></br>or<br></br> Make Friends
+          Talk to Strangers<br></br>or<br></br>Make Friends
         </h1>
         <p className="w-full tracking-wider text-center mt-10">
           Experience an exciting free random chat alternative to find friends,
@@ -16,8 +17,9 @@ const HomeUtility = () => {
           anonymous chat rooms. No registration required.
         </p>
         <div className="w-full mt-10 justify-center items-center flex ">
-          <button className="border-2 border-red-500 p-5 w-full tracking-widest hover:bg-red-500 duration-200 ease-in-out text-2xl rounded-xl hover:rounded-2xl hover:scale-110 drop-shadow-xl">
-            Start Chatting
+          <button className="border-2 border-red-500 p-5 w-full tracking-widest hover:bg-red-500 duration-200 ease-in-out text-2xl rounded-xl hover:rounded-2xl hover:scale-110 drop-shadow-xl flex justify-center items-center">
+            <h1>Start Chatting</h1>
+            <MessageSquareText className="ml-10"/>
           </button>
         </div>
       </div>
