@@ -1,4 +1,4 @@
-import { GhostIcon } from "lucide-react";
+import { GhostIcon, LogInIcon } from "lucide-react";
 import { Images } from "./Images";
 
 
@@ -17,6 +17,11 @@ const LandingUtility_part1 = () =>{
             connect with strangers, and talk with different people in random
             anonymous chat rooms. No registration required.
           </p>
+          <div className="w-full mt-5 justify-center items-center flex ">
+            <button className="border-2 border-red-500 p-5 w-full tracking-widest hover:bg-red-500 duration-200 ease-in-out text-2xl rounded-xl hover:rounded-2xl hover:scale-110 drop-shadow-xl justify-center items-center flex ">
+              <LogInIcon className="text-5xl mr-5"/><h1>Login To Continue</h1>
+            </button>
+          </div>
           <div className="w-full mt-10 justify-center items-center flex ">
             <button className="border-2 border-red-500 p-5 w-full tracking-widest hover:bg-red-500 duration-200 ease-in-out text-2xl rounded-xl hover:rounded-2xl hover:scale-110 drop-shadow-xl justify-center items-center flex ">
               <h1>Continue in Ghost Mode</h1>
