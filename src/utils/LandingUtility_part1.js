@@ -1,6 +1,6 @@
 import { Images } from "./Images";
 
-const LandingComponents_part1 = () =>{
+const LandingUtility_part1 = () =>{
     return (
       <div className="flex justify-center items-center bg-gradient-to-b from-[#1C1938] to-gray-900">
         <div className="flex justify-center items-center w-1/3">
@@ -28,4 +28,4 @@ const LandingComponents_part1 = () =>{
     );
 };
 
-export default LandingComponents_part1;
+export default LandingUtility_part1;

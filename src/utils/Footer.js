@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Facebook, Github, Instagram } from "lucide-react";
 
 const Footer = () => {
     return (
@@ -24,7 +25,9 @@ const Footer = () => {
             <Link className="m-2 w-1/4 text-center text-lg">Refund Policy</Link>
           </div>
           <div className="h-full w-1/4 flex justify-center items-center">
-            <h1>hello</h1>
+            <Link className="hover:bg-red-500 duration-150 ease-in-out p-2 rounded-xl m-2"><Instagram/></Link>
+            <Link className="hover:bg-red-500 duration-150 ease-in-out p-2 rounded-xl m-2"><Facebook/></Link>
+            <Link className="hover:bg-red-500 duration-150 ease-in-out p-2 rounded-xl m-2"><Github/></Link>
           </div>
         </footer>
         <footer className="text-white">
