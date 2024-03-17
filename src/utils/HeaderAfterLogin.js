@@ -36,7 +36,7 @@ const HeaderAfterLogin = () => {
         </nav>
       </div>
       <div className="flex items-center justify-center w-1/3">
-        <Link to={"/"}>
+        <Link to="/home">
           <h1 className="text-red-500 text-center  font-semibold text-4xl hover:scale-110 duration-200 ease-in-out hover:shadow-2xl">
             LiveChat.HQ
           </h1>
@@ -59,9 +59,9 @@ const HeaderAfterLogin = () => {
           />
         </div>
         <div className="w-1/6">
-          <button className="w-full border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold flex justify-center items-center">
+        <Link to={"/"} className="w-full border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold flex justify-center items-center">
             <LogOutIcon className="text-white" />
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -2,7 +2,8 @@ import { ChevronsLeftRight, MailIcon, User2 } from "lucide-react";
 
 const ContactForm = () => {
   return (
-    <div className="bg-gradient-to-b from-[#1C1938] to-black flex justify-center items-center">
+    <div className="bg-gradient-to-b from-[#1C1938] to-gray-900 flex justify-center items-center">
+      {/* <h1>bg-gradient-to-b from-[#1C1938] to-black</h1> */}
       <div className=" w-1/2">
         <form className="w-full flex flex-col p-10">
           <label

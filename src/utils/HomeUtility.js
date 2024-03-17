@@ -1,5 +1,6 @@
 import { MessageSquareText } from "lucide-react";
 import { Images } from "./Images";
+import { Link } from "react-router-dom";
 
 const HomeUtility = () => {
   return (
@@ -17,10 +18,13 @@ const HomeUtility = () => {
           anonymous chat rooms. No registration required.
         </p>
         <div className="w-full mt-10 justify-center items-center flex ">
-          <button className="border-2 border-red-500 p-5 w-full tracking-widest hover:bg-red-500 duration-200 ease-in-out text-2xl rounded-xl hover:rounded-2xl hover:scale-110 drop-shadow-xl flex justify-center items-center">
+          <Link
+            to="/ChattingArea"
+            className="border-2 border-red-500 p-5 w-full tracking-widest hover:bg-red-500 duration-200 ease-in-out text-2xl rounded-xl hover:rounded-2xl hover:scale-110 drop-shadow-xl flex justify-center items-center"
+          >
             <h1>Start Chatting</h1>
-            <MessageSquareText className="ml-10"/>
-          </button>
+            <MessageSquareText className="ml-10" />
+          </Link>
         </div>
       </div>
       <div className="flex justify-center items-center w-1/3">

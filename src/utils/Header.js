@@ -6,13 +6,13 @@ const Header = () => {
     <div className="bg-[#1C1938] flex justify-evenly items-center w-full h-16 p-10">
       <div className="text-white w-1/3">
         <nav className="flex justify-around">
-          <Link
+          {/* <Link
             to="/home"
             className="flex justify-center items-center font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
           >
             <HomeIcon className="m-1" />
             Home
-          </Link>
+          </Link> */}
           <Link
             to="/about"
             className="flex justify-center items-center font-light text-lg hover:scale-110 hover:font-medium transition duration-150 ease-in-out hover:text-red-500 "
@@ -55,9 +55,11 @@ const Header = () => {
           />
         </div>
         <div className="w-1/6">
-          <button className="w-full border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold flex justify-center items-center animate-pulse">
+          <Link 
+          to="/home"
+          className="w-full border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold flex justify-center items-center animate-pulse">
             <LogInIcon className="text-white" />
-          </button>
+          </Link>
         </div>
       </div>
     </div>
