@@ -7,11 +7,17 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import FooterAllComponents from "./components/FooterAllComponents";
 import ChattingArea from "./components/ChattingArea";
+import { Provider } from "react-redux";
+import appStore from "./utils/store";
 
 const AppLayout = () => {
-  return <div className="container w-[100%] overflow-hidden ">
-    <Outlet/>
-  </div>;
+  return (
+    <div className="container w-[100%] overflow-hidden ">
+      <Provider store={appStore}>
+        <Outlet />
+      </Provider>
+    </div>
+  );
 };
 
 const appRouter = createBrowserRouter([
@@ -26,23 +32,23 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/home",
-        element: <Home/>,
+        element: <Home />,
       },
       {
         path: "/about",
-        element: <About/>,
+        element: <About />,
       },
       {
         path: "/contact",
-        element: <Contact/>,
+        element: <Contact />,
       },
       {
         path: "/FooterAllComponents",
-        element: <FooterAllComponents/>,
+        element: <FooterAllComponents />,
       },
       {
         path: "/ChattingArea",
-        element: <ChattingArea/>,
+        element: <ChattingArea />,
       },
     ],
   },

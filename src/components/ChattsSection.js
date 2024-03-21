@@ -1,14 +1,14 @@
 import { Circle, Images, SearchIcon, Send, User2Icon } from "lucide-react";
+import Chats from "./Chats";
+import InputBox from "./InputBox";
 
 const ChattsSection = () => {
   return (
-    <div className="bg-black w-full h-3/4 flex shadow-2xl m-5 p-5 rounded-2xl">
-      <div className="w-4/5 bg-[#2E2F38] m-2 rounded-lg">
-        <div className="h-[90%] flex justify-center items-center overflow-hidden">
+    <div className="bg-black w-full h-3/4 flex justify-evenly shadow-2xl m-5 p-2 rounded-2xl ">
+      {/* <div className="w-4/5 bg-[#2E2F38] m-2 rounded-lg  border">
+        <div className="h-[90%] border flex justify-center items-center overflow-hidden">
           <div className="w-fit h-fit p-10 rounded-2xl flex justify-center items-center overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-            <h1 className="w-fit text-9xl">
-              Say Hii...
-            </h1>
+            <h1 className="w-fit text-9xl">Say Hii...</h1>
           </div>
         </div>
         <div className="w-full h-[10%] flex justify-center items-center rounded-2xl border border-[#2E2F38] shadow-sm shadow-black">
@@ -26,8 +26,18 @@ const ChattsSection = () => {
           />
           <Send className="m-6" />
         </div>
+      </div> */}
+      <div className="ChatArea h-full w-full rounded-lg">
+        <div className="col-span-7 text-center bg-gray-900 h-full rounded-xl mx-2 drop-shadow-2xl ">
+          <div className="flex flex-col relative w-[100%] h-full ">
+            <div className="user-query flex-1 flex items-end ">
+              <Chats />
+            </div>
+            <InputBox />
+          </div>
+        </div>
       </div>
-      <section className="profile_card w-1/5 flex flex-col bg-[#2E2F38] m-2 rounded-lg">
+      <section className="profile_card w-1/5 flex flex-col bg-[#2E2F38] mx-2 rounded-lg">
         <div>
           <div className=" flex justify-center items-center p-10">
             <User2Icon className="h-32 w-32 bg-red-500 p-5 rounded-full" />
