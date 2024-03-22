@@ -56,7 +56,7 @@ const Header = () => {
         </div>
         <div className="w-1/6">
           <Link 
-          to="/home"
+          to="/loginpage"
           className="w-full border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold flex justify-center items-center animate-pulse">
             <LogInIcon className="text-white" />
           </Link>

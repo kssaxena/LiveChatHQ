@@ -19,4 +19,8 @@ export const Images = [
     id: 4,
     url: "https://res.cloudinary.com/dr5lcwbsx/image/upload/v1710585105/LiveChatHQ/features-03-image-03_nw4ml9.png",
   },
+  {
+    id: 5,
+    url: "https://res.cloudinary.com/dr5lcwbsx/image/upload/v1711131261/LiveChatHQ/Mobile_login_Customizable_Semi_Flat_Illustrations___Pana_Style-removebg-preview_lvoe08.png",
+  },
 ];

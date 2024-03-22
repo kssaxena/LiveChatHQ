@@ -9,6 +9,7 @@ import FooterAllComponents from "./components/FooterAllComponents";
 import ChattingArea from "./components/ChattingArea";
 import { Provider } from "react-redux";
 import appStore from "./utils/store";
+import LoginPage from "./components/LoginPage";
 
 const AppLayout = () => {
   return (
@@ -49,6 +50,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/ChattingArea",
         element: <ChattingArea />,
+      },
+      {
+        path: "/loginpage",
+        element: <LoginPage/>,
       },
     ],
   },

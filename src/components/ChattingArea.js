@@ -7,8 +7,8 @@ import Footer from "../utils/Footer";
 const ChattingArea = () => {
   return (
     <div className="bg-[#2E2F38] w-screen">
-      <h1 className="bg-red-500 p-1  text-center text-white tracking-widest">
-        If using ANONYMOUS account, All chats will disappear once Refreshed..
+      <h1 className="bg-red-500 p-1  text-center text-white tracking-widest animate-pulse">
+        All chats will disappear once Page is Refreshed..
       </h1>
       <div className=" border-[#2E2F38] border flex p-2 shadow-2xl">
         <div className="w-1/6 border-r border-red-500">
@@ -36,13 +36,13 @@ const ChattingArea = () => {
       </div>
       <section className="flex text-white p-5">
         <div className="w-1/5 h-screen m-5">
-          <FriendsSection/>
+          <FriendsSection />
         </div>
         <div className="w-4/5 h-screen mr-10">
           <ChattsSection />
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

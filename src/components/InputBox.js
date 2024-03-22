@@ -23,7 +23,7 @@ const InputBox = () => {
         <input
           className=" text-black h-10 w-[90%] rounded-3xl mx-2 px-3"
           type="text"
-          placeholder="Message Hare"
+          placeholder="Message Here"
           onChange={handelInput}
           value={searchMesg}
           onKeyPress={(e) => e.key === "Enter" && handelSendMessage}
