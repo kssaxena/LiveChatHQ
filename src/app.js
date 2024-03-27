@@ -10,6 +10,8 @@ import ChattingArea from "./components/ChattingArea";
 import { Provider } from "react-redux";
 import appStore from "./utils/store";
 import LoginPage from "./components/LoginPage";
+import ChattingPrivateGroupArea from "./components/ChattingPrivateGroupArea";
+import PrivateChat from "./components/PrivateChats";
 
 const AppLayout = () => {
   return (
@@ -48,12 +50,20 @@ const appRouter = createBrowserRouter([
         element: <FooterAllComponents />,
       },
       {
-        path: "/ChattingArea",
+        path: "/ChattingPrivateGroupArea",
+        element: <ChattingPrivateGroupArea />,
+      },
+      {
+        path: "/chattingArea",
         element: <ChattingArea />,
       },
       {
+        path: "/PrivateChat",
+        element: <PrivateChat/>,
+      },
+      {
         path: "/loginpage",
-        element: <LoginPage/>,
+        element: <LoginPage />,
       },
     ],
   },

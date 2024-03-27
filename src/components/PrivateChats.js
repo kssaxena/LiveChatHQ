@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import ChattsSection from "./ChattsSection";
 import FriendsSection from "./FriendsSection";
 import Footer from "../utils/Footer";
+import PrivateFriendsSection from "./PrivateFriendSection";
 
-const ChattingArea = () => {
+const PrivateChat = () => {
   return (
     <div className="bg-[#2E2F38] w-screen">
       <h1 className="bg-red-500 p-1  text-center text-white tracking-widest animate-pulse">
@@ -21,7 +22,7 @@ const ChattingArea = () => {
         <div className=" w-full flex">
           <div className="w-11/12">
             <h1 className="text-white text-3xl font-medium p-1 ml-10">
-              Group Chats
+              Private Chats
             </h1>
           </div>
           <div className="flex p-2 justify-evenly items-center w-1/6 border-l border-red-500">
@@ -36,7 +37,7 @@ const ChattingArea = () => {
       </div>
       <section className="flex text-white p-5">
         <div className="w-1/5 h-screen m-5">
-          <FriendsSection />
+          <PrivateFriendsSection/>
         </div>
         <div className="w-4/5 h-screen mr-10">
           <ChattsSection />
@@ -47,4 +48,4 @@ const ChattingArea = () => {
   );
 };
 
-export default ChattingArea;
+export default PrivateChat;

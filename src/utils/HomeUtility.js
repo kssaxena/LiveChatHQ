@@ -19,7 +19,7 @@ const HomeUtility = () => {
         </p>
         <div className="w-full mt-10 justify-center items-center flex ">
           <Link
-            to="/ChattingArea"
+            to="/ChattingPrivateGroupArea"
             className="border-2 border-red-500 p-5 w-full tracking-widest hover:bg-red-500 duration-200 ease-in-out text-2xl rounded-xl hover:rounded-2xl hover:scale-110 drop-shadow-xl flex justify-center items-center"
           >
             <h1>Start Chatting</h1>

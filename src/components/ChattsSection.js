@@ -37,7 +37,7 @@ const ChattsSection = () => {
           </div>
         </div>
       </div>
-      <section className="profile_card w-1/5 flex flex-col bg-[#2E2F38] mx-2 rounded-lg">
+      {/* <section className="profile_card w-1/5 flex flex-col bg-[#2E2F38] mx-2 rounded-lg">
         <div>
           <div className=" flex justify-center items-center p-10">
             <User2Icon className="h-32 w-32 bg-red-500 p-5 rounded-full" />
@@ -51,7 +51,7 @@ const ChattsSection = () => {
             </h1>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

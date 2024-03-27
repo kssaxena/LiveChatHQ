@@ -26,10 +26,7 @@ const FriendsSection = () => {
     <div className="border border-[#2e2f38] shadow-xl shadow-black p-1 h-fit rounded-2xl">
       <div className=" flex justify-evenly items-center border border-[#2E2F38] ">
         <h1 className="p-3 border border-[#2E2F38] w-full text-center bg-[#0b0b0d] m-1 rounded-2xl">
-          Friends
-        </h1>
-        <h1 className="p-3 border border-[#2E2F38] shadow-lg w-full text-center bg-[#2e2f38] m-1 rounded-2xl">
-          Chats
+          Group Members
         </h1>
       </div>
       <div>
