@@ -71,7 +71,7 @@ const LoginPage = () => {
         </section>
         <section className="flex justify-center items-center">
           <Link
-            to="/ChattingArea"
+            to="/ChattingPrivateGroupArea"
             className="flex justify-center items-center text-white pl-20 pr-20 p-5 text-xl border-2 border-red-500 rounded-3xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:font-semibold hover:text-black "
           >
             Ghost

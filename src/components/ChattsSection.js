@@ -4,7 +4,7 @@ import InputBox from "./InputBox";
 
 const ChattsSection = () => {
   return (
-    <div className="bg-black w-full h-3/4 flex justify-evenly shadow-2xl m-5 p-2 rounded-2xl ">
+    <div className="bg-black w-5/6 h-3/4 flex justify-evenly shadow-2xl ml-20 m-5 p-2 rounded-2xl ">
       {/* <div className="w-4/5 bg-[#2E2F38] m-2 rounded-lg  border">
         <div className="h-[90%] border flex justify-center items-center overflow-hidden">
           <div className="w-fit h-fit p-10 rounded-2xl flex justify-center items-center overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">

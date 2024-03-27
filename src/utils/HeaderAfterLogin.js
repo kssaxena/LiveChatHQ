@@ -4,6 +4,7 @@ import {
   ListCollapse,
   LogOutIcon,
   SearchIcon,
+  Check
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -43,8 +44,10 @@ const HeaderAfterLogin = () => {
         </Link>
       </div>
       <div className="flex w-1/3 justify-center items-center text-white ">
-        <div className="w-5/6 flex bg-red-500 justify-center items-center rounded-2xl mr-10 hover:scale-110 duration-150 ease-in-out
-          hover:shadow-2xl">
+        <div
+          className="w-5/6 flex bg-red-500 justify-center items-center rounded-2xl mr-10 hover:scale-110 duration-150 ease-in-out
+          hover:shadow-2xl"
+        >
           <label
             className="flex w-1/6 text-black justify-center text-sm font-normal p-1"
             htmlFor="text"
@@ -55,11 +58,15 @@ const HeaderAfterLogin = () => {
             className="w-full bg-[#1C1938] m-1 leading-tight focus:outline-none focus:shadow-outline p-5 rounded-2xl "
             id="text"
             type="text"
-            placeholder="Search..."
+            placeholder="Find Friends"
           />
+          <Check className="flex text-black justify-center h-10 w-10 font-light cursor-pointer p-1" />
         </div>
         <div className="w-1/6">
-        <Link to={"/"} className="w-full border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold flex justify-center items-center">
+          <Link
+            to={"/"}
+            className="w-full border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold flex justify-center items-center"
+          >
             <LogOutIcon className="text-white" />
           </Link>
         </div>

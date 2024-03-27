@@ -42,7 +42,7 @@ const ChattingArea = () => {
           <ChattsSection />
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

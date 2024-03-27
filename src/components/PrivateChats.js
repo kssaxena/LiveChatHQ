@@ -37,13 +37,13 @@ const PrivateChat = () => {
       </div>
       <section className="flex text-white p-5">
         <div className="w-1/5 h-screen m-5">
-          <PrivateFriendsSection/>
+          <PrivateFriendsSection />
         </div>
-        <div className="w-4/5 h-screen mr-10">
+        <div className="w-4/5 h-screen ">
           <ChattsSection />
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

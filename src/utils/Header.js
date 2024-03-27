@@ -1,4 +1,4 @@
-import { SearchIcon, Contact, HomeIcon, ListCollapse, LogInIcon } from "lucide-react";
+import { SearchIcon, Contact, HomeIcon, ListCollapse, LogInIcon, Check } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -51,13 +51,15 @@ const Header = () => {
             className="w-full bg-[#1C1938] m-1 leading-tight focus:outline-none focus:shadow-outline p-5 rounded-2xl "
             id="text"
             type="text"
-            placeholder="Search..."
+            placeholder="Find Friends"
           />
+          <Check className="flex text-black justify-center h-10 w-10 font-light cursor-pointer p-1" />
         </div>
         <div className="w-1/6">
-          <Link 
-          to="/loginpage"
-          className="w-full border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold flex justify-center items-center animate-pulse">
+          <Link
+            to="/loginpage"
+            className="w-full border-2 border-red-500 p-2 rounded-2xl hover:bg-red-500 duration-150 ease-in-out hover:scale-110 hover:text-black font-semibold flex justify-center items-center animate-pulse"
+          >
             <LogInIcon className="text-white" />
           </Link>
         </div>

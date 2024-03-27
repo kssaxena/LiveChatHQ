@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SendHorizontal } from "lucide-react";
+import { ImageUp, SendHorizontal } from "lucide-react";
 import { useDispatch } from "react-redux";
 import { addBotReply, addSearchMessage } from "../utils/searchSlice";
 const { GoogleGenerativeAI } = require("@google/generative-ai");
@@ -26,7 +26,7 @@ const InputBox = () => {
     const response = await result.response;
     const text = response.text();
     setBotMessage(text);
-     console.log(text);
+    console.log(text);
   }
 
   const handelSendMessage = async () => {
@@ -39,6 +39,12 @@ const InputBox = () => {
   return (
     <div className="w-full mt-auto p-3 bg-red-500 rounded-2xl">
       <form className=" flex" onSubmit={(e) => e.preventDefault()}>
+        <button
+          className=" rounded-full hover:scale-110 hover:text-black"
+          onClick={handelSendMessage}
+        >
+          <ImageUp />
+        </button>
         <input
           className="bg-red-50 text-black h-14 w-[90%] rounded-3xl mx-10 px-3"
           type="text"
